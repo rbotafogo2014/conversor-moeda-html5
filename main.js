@@ -2,7 +2,7 @@ function chamarAPI(){
 	console.log("Chamando API");
 	const endpoint = "https://api.exchangeratesapi.io/latest";
 	var oParametros = { 
-		base: $("3moeda_origem").val()
+		base: $("#moeda_origem").val()
 	};
 	$.get(endpoint, oParametros, callback );
 }
